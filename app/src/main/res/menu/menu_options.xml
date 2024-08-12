@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:title="Home"
-        android:id="@+id/menuHome"/>
+        app:showAsAction="ifRoom"
+        android:title=" "
+        android:icon="@drawable/baseline_menu_24">
 
-    <item
-        android:title="Productos"
-        android:id="@+id/menuPrroductos"/>
+        <menu>
 
-    <item
-        android:title="Login"
-        android:id="@+id/menuLogin"/>
+            <item
+                android:id="@+id/productos"
+                android:title="@string/Productos"
+                app:showAsAction="never"
+                android:icon="@drawable/joystick_icono"
+                />
 
-    <item
-        android:title="Exit"
-        android:id="@+id/menuExit"/>
+            <item
+                android:id="@+id/login"
+                android:title="@string/login"
+                app:showAsAction="never"
+                android:icon="@drawable/user_icono"
+                />
+
+            <item
+                android:id="@+id/exit"
+                android:title="@string/exit"
+                app:showAsAction="never"
+                android:icon="@drawable/exit_icono"
+                />
+
+        </menu>
+    </item>
+
 </menu>
