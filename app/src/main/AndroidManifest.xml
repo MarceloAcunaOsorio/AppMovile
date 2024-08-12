@@ -13,6 +13,9 @@
         android:theme="@style/Theme.TiendaJuegos"
         tools:targetApi="31">
         <activity
+            android:name=".detailedActivity"
+            android:exported="false" />
+        <activity
             android:name=".ActivityProductos"
             android:exported="false" />
         <activity
